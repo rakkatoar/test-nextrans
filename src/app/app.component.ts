@@ -1,5 +1,5 @@
 import { Component } from '@angular/core';
-
+import { TodoService } from './services/todo.service';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,4 +7,14 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'test-nextrans';
+  todos: any[] = [];
+  constructor(
+    public todoService: TodoService,
+  ) {
+    this.todos = this.todoService.getTodos();
+  }
+
+  getTodos() {
+    this.todos = this.todoService.getTodos();
+  }
 }

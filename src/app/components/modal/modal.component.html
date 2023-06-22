@@ -1,0 +1,28 @@
+<button class="btn primary-btn" (click)="changeModal('form')">Add</button>
+
+<div class="modal" *ngIf="showFormModal">
+	<div class="modal-content">
+		<p class="modal-title">New To Do</p>
+		<form [formGroup]="formData">
+			<div class="form-group">
+				<textarea formControlName="title" name="title" cols="30" rows="10"></textarea>
+			</div>
+			<div class="warning-text" *ngIf="formData.controls['title'].errors">
+				Input To Do title is required.
+			</div>
+		<div class="modal-actions">
+			<button class="btn" (click)="changeModal('form')">Cancel</button>
+			<button type="submit" class="btn primary-btn" (click)="onSubmitForm()">Submit</button>
+		</div>
+		</form>
+	</div>
+</div>
+
+<div class="modal" *ngIf="showSuccessModal">
+	<div class="modal-content">
+		<p>data has been succesfully added!</p>
+		<div class="modal-actions">
+			<button class="btn" (click)="changeModal('success')">Close</button>
+		</div>
+	</div>
+</div>

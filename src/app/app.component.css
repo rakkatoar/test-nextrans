@@ -1,0 +1,19 @@
+.container{
+	display: flex;
+	justify-content: center;
+}
+.content{
+	width: 100%;
+	max-width: 800px;
+}
+table {
+	margin-top: 1rem;
+	width: 100%;
+	border-collapse: collapse;
+	border-style: hidden;
+	border: 1px solid black;
+}
+
+table td, table th {
+	border: 1px solid black;
+}

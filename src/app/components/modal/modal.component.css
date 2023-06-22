@@ -1,0 +1,47 @@
+.btn{
+	border-radius: 10px;
+	border:none;
+	padding: 0.5rem 1rem;
+	color:black;
+	background-color: rgb(255, 255, 255);
+	border: 1px solid black;
+}
+.primary-btn{
+	color:white;
+	border: none;
+	background-color: rgb(50, 127, 183);
+}
+.modal{
+	position: fixed;
+    width: 100vw;
+    height: 100vh;
+    background: rgba(0,0,0,0.1);
+    top: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.modal-content{
+	background-color: white;
+	padding: 1rem;
+	border-radius:10px;
+}
+
+.modal-actions{
+	margin-top: 1rem;
+	display: flex;
+	justify-content: space-around;
+}
+.modal-title{
+	margin-bottom:1rem;
+}
+p{
+	margin: 0;
+}
+
+.warning-text{
+	color:red;
+}
